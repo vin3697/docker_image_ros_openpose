@@ -34,10 +34,10 @@ cmake -DBUILD_PYTHON=ON \
 	  .. 
 	  
 
-sed -ie 's/set(AMPERE "80 86")/#&/g' ../cmake/Cuda.cmake
-sed -ie 's/set(AMPERE "80 86")/#&/g' ../3rdparty/caffe/cmake/Cuda.cmake
-make -j`nproc`
-sudo make install
+$ sed -ie 's/set(AMPERE "80 86")/#&/g' ../cmake/Cuda.cmake
+$ sed -ie 's/set(AMPERE "80 86")/#&/g' ../3rdparty/caffe/cmake/Cuda.cmake
+$ make -j`nproc`
+$ sudo make install
 
 #BUILD PYTHON OPENPOSE
 $ cd /openpose/build/python/openpose
