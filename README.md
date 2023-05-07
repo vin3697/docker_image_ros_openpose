@@ -1,4 +1,4 @@
-# docker_image_ros_openpose
+# docker_image_ros_openpose (read it in raw format)
 
 #Credits
 1. https://cmu-perceptual-computing-lab.github.io/openpose
