@@ -1,4 +1,4 @@
-# docker_image_ros_openpose (read it in raw format)
+# docker_image_ros_openpose
 
 Credits
 1. https://cmu-perceptual-computing-lab.github.io/openpose
@@ -19,7 +19,7 @@ docker run --gpus all -e DISPLAY=$DISPLAY --env NVIDIA_VISIBLE_DEVICES=all --env
 
 The explanation of this command I have uploaded to Docker Hub,
 https://hub.docker.com/r/vin8/openpose_vin
-'''
+```
 cd /openpose/build
 rm -r *
 cmake ..
@@ -43,7 +43,7 @@ $ sudo make install
 $ cd /openpose/build/python/openpose
 $ make install
 
-If you use pyopenpose (python scripts instead of cpp)
+#If you use pyopenpose (python scripts instead of cpp)
 #SETUP setup env. FOR PYOPENPOSE AND IMPORT CHECK
 $ cd /openpose/build/python/openpose
 $ cp ./pyopenpose.cpython-36m-x86_64-linux-gnu.so /usr/local/lib/python3.6/dist-packages
@@ -59,4 +59,4 @@ Starting OpenPose demo...
 Configuring OpenPose...
 Starting thread(s)...
 Auto-detecting camera index... Detected and opened camera 0.
-'''
+```
