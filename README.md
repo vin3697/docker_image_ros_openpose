@@ -14,8 +14,16 @@ The image has only Openpose and ROS installation. You can refer to my Docker Hub
 
 If you want to use the docker imgae please do the below steps,
 After pulling the image and running with the command below:
-
+```
 docker run --gpus all -e DISPLAY=$DISPLAY --env NVIDIA_VISIBLE_DEVICES=all --env NVIDIA_DRIVER_CAPABILITIES=all --env DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev:/dev --net=host --privileged --device=/dev/video0:/dev/video0 -it vin8/openpose_vin:v2.0 /bin/bash
+```
+
+Highlighting the importance of the NVIDIA Container Toolkit and Docker configuration for GPU utilization within the Docker container, enhancing computational efficiency.
+
+- Configuring Docker - NVIDIA Container Toolkit Setup : https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuring-docker
+- Toolkit Installation - NVIDIA Container Toolkit Installation 
+: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installing-with-apt
+
 
 The explanation of this command I have uploaded to Docker Hub,
 https://hub.docker.com/r/vin8/openpose_vin
